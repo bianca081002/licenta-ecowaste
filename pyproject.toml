@@ -1,17 +1,21 @@
 [project]
 name = "licenta"
 version = "0.1.0"
-description = ""
-authors = [
-    {name = "bianca081002",email = "b.maier15@icloud.com"}
-]
+description = "Add your description here"
 readme = "README.md"
-requires-python = "^3.11"
+requires-python = ">=3.11,<4.0"
+
 dependencies = [
-    "fastapi (>=0.115.8,<0.116.0)"
+    "fastapi>=0.115.12",
+    "uvicorn[standard]",
+    "motor",
+    "pydantic[email]",
+    "pydantic-settings",
+    "python-jose[cryptography]",
+    "passlib[bcrypt]", # versiunea compatibilă cu passlib 1.7.4
+    "bcrypt==3.2.2",
+    "transformers>=4.51.3",
+    "torch>=2.7.0",
+    "pillow>=11.2.1",
 ]
 
-
-[build-system]
-requires = ["poetry-core>=2.0.0,<3.0.0"]
-build-backend = "poetry.core.masonry.api"
