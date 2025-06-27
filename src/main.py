@@ -3,14 +3,11 @@ from fastapi import FastAPI
 from src.db.manager import mongo_manager
 from fastapi.openapi.utils import get_openapi
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.routing import APIRouter
+from fastapi.routing import APIRouter,HTTPException
 from src.api.status import router as status_router
 from src.api.auth import router as auth_router
 from src.api.recycling import router as recycling_router
-
-
-
-
+from src.api.admin import router as admin_router
 
 
 @asynccontextmanager
@@ -74,3 +71,16 @@ app = CORSMiddleware(
 router = APIRouter()
 router.include_router(status_router)
 fastapi_app.include_router(auth_router, prefix="/api/auth")
+fastapi_app.include_router(admin_router)
+
+
+
+@router.post("/feedback/")
+async def feedback(image_name: str, correct_label: str):
+    # Salvăm feedback-ul într-un fișier sau DB
+    try:
+        with open("feedback_log.txt", "a") as feedback_file:
+            feedback_file.write(f"{image_name}, {correct_label}\n")
+        return {"message": "Feedback received"}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))

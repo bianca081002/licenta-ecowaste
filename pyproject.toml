@@ -12,10 +12,11 @@ dependencies = [
     "pydantic[email]",
     "pydantic-settings",
     "python-jose[cryptography]",
-    "passlib[bcrypt]", # versiunea compatibilă cu passlib 1.7.4
+    "passlib[bcrypt]",
     "bcrypt==3.2.2",
     "transformers>=4.51.3",
-    "torch>=2.7.0",
     "pillow>=11.2.1",
+    "dotenv>=0.9.9",
+    "python-multipart",
+    "huggingface_hub[hf_xet]" 
 ]
-

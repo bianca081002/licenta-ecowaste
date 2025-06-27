@@ -1,8 +1,6 @@
-from src.models.base import MongoBaseModel
+from pydantic import BaseModel, EmailStr
 
-
-class User(MongoBaseModel):
+class UserResponse(BaseModel):
     username: str
-    email: str
+    email: EmailStr
     is_admin: bool = False
-    

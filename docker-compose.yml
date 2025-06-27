@@ -17,7 +17,7 @@ services:
     restart: always
 
   api:
-    build: .  # 🔧 cheia pentru a rezolva eroarea de build
+    build: .  # cheia pentru a rezolva eroarea de build
     image: licenta
     container_name: licenta-api
     command: uvicorn src.main:app --host 0.0.0.0 --port 8000 --reload
