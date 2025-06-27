@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F6F6"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header with Back Button -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingBottom="8dp">
+
+            <ImageButton
+                android:id="@+id/buttonBack"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="8dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="8dp"
+                android:src="@drawable/ic_back_arrow"
+                app:tint="#2E7D32"
+                android:contentDescription="Go back" />
+
+            <TextView
+                android:id="@+id/headerText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="♻️ Recycling Tips"
+                android:textSize="29sp"
+                android:textStyle="bold"
+                android:textColor="#2E7D32" />
+
+        </LinearLayout>
+
+        <!-- Tip 1 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            card_view:cardCornerRadius="12dp"
+            card_view:cardElevation="4dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="🧴 Tip 1: Rinse and clean containers before recycling to prevent contamination. Dirty items can ruin entire batches of recycling."
+                android:textSize="16sp"
+                android:textColor="#444" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- Tip 2 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            card_view:cardCornerRadius="12dp"
+            card_view:cardElevation="4dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="🛍️ Tip 2: Don't place plastic bags in curbside bins. Take them to specific drop-off locations often found at grocery stores."
+                android:textSize="16sp"
+                android:textColor="#444" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- Tip 3 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            card_view:cardCornerRadius="12dp"
+            card_view:cardElevation="4dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="📦 Tip 3: Flatten cardboard boxes to save space and ensure they get processed properly at recycling centers."
+                android:textSize="16sp"
+                android:textColor="#444" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- Tip 4 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            card_view:cardCornerRadius="12dp"
+            card_view:cardElevation="4dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="🍕 Tip 4: Avoid recycling greasy food containers like pizza boxes unless the soiled part is removed. Grease can damage recycling equipment."
+                android:textSize="16sp"
+                android:textColor="#444" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- Tip 5 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            card_view:cardCornerRadius="12dp"
+            card_view:cardElevation="4dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="🔋 Tip 5: Batteries, electronics, and hazardous materials should never go in regular recycling bins. Take them to special collection points."
+                android:textSize="16sp"
+                android:textColor="#444" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- Tip 6 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="12dp"
+            card_view:cardElevation="4dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="📄 Tip 6: Shred sensitive documents only when necessary. Loose paper is easier to recycle. Place shredded paper in a paper bag if required."
+                android:textSize="16sp"
+                android:textColor="#444" />
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>

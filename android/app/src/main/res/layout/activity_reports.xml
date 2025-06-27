@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/reportRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#FFFFFF">
+
+    <!-- Header cu buton Back -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/buttonBack"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="16dp"
+            android:layout_gravity="top|start"
+            android:backgroundTint="@android:color/holo_green_dark"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="8dp"
+            android:src="@drawable/ic_back_arrow"
+            android:contentDescription="Înapoi" />
+
+        <TextView
+            android:id="@+id/reportTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="My Recycling Report"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#333" />
+    </LinearLayout>
+
+    <!-- Tabel -->
+    <TableLayout
+        android:id="@+id/reportTable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:stretchColumns="*">
+
+        <!-- Header -->
+        <TableRow android:background="#BDBDBD">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Materials"
+                android:textStyle="bold"
+                android:padding="12dp"
+                android:textColor="#000" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Number of classifications"
+                android:textStyle="bold"
+                android:padding="12dp"
+                android:textColor="#000" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvCenterName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="Centru"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/tvTypes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tipuri de deșeuri"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/tvSchedule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Program"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Status: Necunoscut"
+        android:textColor="@android:color/holo_orange_dark"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/tvWebsite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Deschide site-ul"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textStyle="italic"
+        android:autoLink="web"/>
+</LinearLayout>

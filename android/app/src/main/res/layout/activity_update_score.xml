@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+
+    <EditText
+        android:id="@+id/editTextUserId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter User ID" />
+
+    <EditText
+        android:id="@+id/editTextNewScore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter New Score"
+        android:inputType="number"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnUpdateScore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Score"
+        android:layout_marginTop="24dp" />
+</LinearLayout>

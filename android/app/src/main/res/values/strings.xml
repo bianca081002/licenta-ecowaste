@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">WasteApp</string>
+    <string name="username_label">Nume Utilizator</string>
+    <string name="email_placeholder">email@exemplu.com</string>
+    <string name="role_user">User</string>
+    <string name="delete_user_desc">Șterge utilizator</string>
+    <string name="admin_dashboard_title">Hello Admin!</string>
+    <string name="logout">Logout</string>
+    <string name="view_reports">View Reports</string>
+    <string name="my_profile">My Profile</string>
+    <string name="view_users">View Users</string>
+
+
+
+    <!-- Login Screen Strings -->
+    <string name="app_title">Recycling Application</string>
+    <string name="welcome">Welcome</string>
+    <string name="login_instruction">Please login with your information</string>
+    <string name="email_label">Email Address</string>
+    <string name="password_label">Password</string>
+    <string name="email_hint">Enter your email</string>
+    <string name="password_hint">Enter your password</string>
+    <string name="remember_me">Remember me</string>
+    <string name="register">Are you a new user? Register</string>
+    <string name="login">Login</string>
+    <string name="recycling_icon_desc">Recycling logo icon</string>
+    <string name="profile_icon_desc">Profile icon</string>
+
+
+    <string name="dashboard_title">Welcome to EcoWaste Application!</string>
+    <string name="scan_waste">Scan Waste</string>
+    <string name="recycling_tips">Recycling Tips</string>
+    <string name="my_reports">My Reports</string>
+    <string name="community">Community</string>
+    <string name="recycling_map">Recycling Map</string>
+
+
+
+
+    <string name="scan_waste_icon_desc">Scan waste icon</string>
+    <string name="tips_icon_desc">Tips icon</string>
+    <string name="reports_icon_desc">Reports icon</string>
+    <string name="community_icon_desc">Community icon</string>
+    <string name="map_icon_desc">Map icon</string>
+
+
+
+
+
+</resources>

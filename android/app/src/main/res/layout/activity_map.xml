@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities_in_dashboard.MapActivity">
+
+    <!-- Fragment Google Maps -->
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Container cu CheckBox-uri pentru filtrare tipuri de deșeuri -->
+    <LinearLayout
+        android:id="@+id/filterContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:layout_marginTop="72dp">
+
+        <CheckBox
+            android:id="@+id/checkPlastic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Plastic"
+            android:textColor="@android:color/holo_green_dark" />
+
+        <CheckBox
+            android:id="@+id/checkHartie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hârtie"
+            android:textColor="@android:color/holo_green_dark" />
+
+        <CheckBox
+            android:id="@+id/checkSticla"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sticlă"
+            android:textColor="@android:color/holo_green_dark" />
+
+        <CheckBox
+            android:id="@+id/checkMetal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Metal"
+            android:textColor="@android:color/holo_green_dark" />
+    </LinearLayout>
+
+    <!-- Buton de întoarcere cu iconiță -->
+    <ImageButton
+        android:id="@+id/buttonBack"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="16dp"
+        android:layout_gravity="top|start"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="8dp"
+        android:src="@drawable/ic_back_arrow"
+        android:contentDescription="Înapoi" />
+</FrameLayout>
