@@ -40,7 +40,7 @@ The backend is fully containerized and can be run locally using Docker Compose.
 #### 1. Clone the repository
 
 ```bash
-git clone https://gitlab.upt.ro/your-username/ecowaste.git
+git clone https://github.com/bianca081002/licenta-ecowaste.git
 cd ecowaste
 ```
 
@@ -54,9 +54,12 @@ cp .env.example .env
 
 Fill in required variables:
 ```env
-MONGO_MASTER_DATABASE_USER=
-MONGO_MASTER_DATABASE_PASSWORD=
-JWT_SECRET_KEY=my_secret_key
+MONGO_MASTER_DATABASE_USER=your_mongo_user
+MONGO_MASTER_DATABASE_PASSWORD=your_mongo_password
+MONGO_DATABASE_NAME=licenta
+MONGO_DATABASE_URI=mongodb://your_user:your_pass@localhost:27017/licenta
+
+JWT_SECRET_KEY=your_jwt_secret_key
 ACCESS_TOKEN_EXPIRE_MINUTES=60
 ```
 
