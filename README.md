@@ -119,7 +119,7 @@ The project will sync and download required dependencies.
 #### 4. Set SDK path (if needed)
 Edit `local.properties` and add:
 ```
-sdk.dir=/path/to/your/android/sdk
+sdk.dir=C:/Users/ady_m/AppData/Local/Android/Sdk
 ```
 
 #### 5. Connect a device or emulator
