@@ -38,7 +38,6 @@ def require_admin(token: Annotated[str, Depends(oauth2_scheme)]) -> TokenData:
     if not getattr(token_data, "email", None):
         raise HTTPException(status_code=403, detail="Acces interzis")
 
-    # Dacă vrei să incluzi și rolul de admin din token:
     payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
     if not payload.get("is_admin", False):
         raise HTTPException(status_code=403, detail="Doar administratorii au acces")
